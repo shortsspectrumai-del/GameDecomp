@@ -9,7 +9,7 @@ fi
 if [[ -z "${JAVA_HOME:-}" && -x "$task_root/tools/jdk-21.0.12.1+1/bin/java" ]]; then
     export JAVA_HOME="$task_root/tools/jdk-21.0.12.1+1"
 fi
-if [[ -z "${DOTNET_ROOT:-}" ]] && ! command -v dotnet >/dev/null 2>&1 && [[ -x "$task_root/tools/dotnet/dotnet" ]]; then
+if [[ -z "${DOTNET_ROOT:-}" && -x "$task_root/tools/dotnet/dotnet" ]]; then
     export DOTNET_ROOT="$task_root/tools/dotnet"
     export PATH="$DOTNET_ROOT:$PATH"
 fi

@@ -12,9 +12,13 @@ import urllib.error
 import urllib.request
 from unittest.mock import patch
 
-import psutil
+try:
+    import psutil
+except ImportError:
+    psutil = None
 
 
+@unittest.skipUnless(psutil is not None, 'Optional psutil dependency is unavailable')
 class LiveQualityFormTests(unittest.TestCase):
     def alive(self, pid):
         try:
