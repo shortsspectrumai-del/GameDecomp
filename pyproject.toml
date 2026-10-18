@@ -1,0 +1,79 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gamedecomp"
+version = "0.3.7"
+description = "Evidence-driven binary decompiler, SIMD/CFG lifter, GraphSAGE GNN classifier, and AI reconstruction Studio for ELF, PE, WebAssembly, .NET, and JVM"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+license = {file = "LICENSE"}
+keywords = [
+    "decompiler",
+    "reverse-engineering",
+    "binary-analysis",
+    "ghidra",
+    "p-code",
+    "webassembly",
+    "wasm",
+    "x86-64",
+    "simd",
+    "sse2",
+    "control-flow-graph",
+    "ssa",
+    "dominator-tree",
+    "dwarf",
+    "rtti",
+    "graph-neural-networks",
+    "graphsage",
+    "llm",
+    "differential-testing",
+    "static-analysis",
+    "game-security",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: C",
+    "Programming Language :: C++",
+    "Programming Language :: Java",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Software Development :: Compilers",
+    "Topic :: Software Development :: Disassemblers",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://github.com/yusv46/GameDecomp"
+Repository = "https://github.com/yusv46/GameDecomp"
+Documentation = "https://github.com/yusv46/GameDecomp#readme"
+Issues = "https://github.com/yusv46/GameDecomp/issues"
+Changelog = "https://github.com/yusv46/GameDecomp/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+console = ["lz4>=4"]
+types = ["pyelftools>=0.30"]
+training = ["torch>=2.5"]
+
+[project.scripts]
+gamedecomp = "gamedecomp.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["gamedecomp*"]
+
+[tool.setuptools]
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+
+[tool.setuptools.package-data]
+gamedecomp = ["data/*.json", "data/*.c", "ghidra_scripts/*.java", "ui/*.html", "ui/*.css", "ui/*.js", "ui/*.svg"]

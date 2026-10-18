@@ -1,0 +1,14 @@
+include LICENSE README.md SECURITY.md CHANGELOG.md THIRD_PARTY_NOTICES.md start-studio.sh
+recursive-include gamedecomp *.py *.json *.c *.h *.java *.html *.css *.js *.svg
+recursive-include tests *.py *.cpp
+recursive-include benchmarks *.py
+recursive-include scripts *.py
+recursive-include docs *.md
+prune tools
+prune demo-output
+prune training-output
+prune build
+prune dist
+prune .gamedecomp-cache
+prune .gamedecomp-ui
+global-exclude __pycache__ *.py[cod] *.sqlite *.so *.o *.zip *.tar.gz

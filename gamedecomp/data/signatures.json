@@ -1,0 +1,8 @@
+[
+  {"id":"api:vulkan:present","terms":["vkQueuePresentKHR","vkAcquireNextImageKHR"],"meaning":"Presentazione e acquisizione di immagini swapchain; suggerisce codice di frame rendering.","source":"https://registry.khronos.org/vulkan/specs/latest/man/html/vkQueuePresentKHR.html","confidence":"heuristic"},
+  {"id":"api:opengl:draw","terms":["glDrawElements","glDrawArrays","glBindVertexArray"],"meaning":"Invio di primitive di rendering OpenGL; non dimostra un particolare motore.","source":"https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDrawElements.xhtml","confidence":"heuristic"},
+  {"id":"api:directx:present","terms":["IDXGISwapChain","D3D11CreateDevice","D3D12CreateDevice"],"meaning":"Risorse DirectX o swapchain; inferire ruoli solo insieme ai riferimenti osservati.","source":"https://learn.microsoft.com/en-us/windows/win32/api/dxgi/nn-dxgi-idxgiswapchain","confidence":"heuristic"},
+  {"id":"engine:unity","terms":["il2cpp","UnityEngine","GameAssembly"],"meaning":"Indizi Unity o runtime IL2CPP; non provano la versione né i tipi mancanti.","source":"https://docs.unity3d.com/Manual/IL2CPP.html","confidence":"heuristic"},
+  {"id":"engine:unreal","terms":["UObject","FName","UClass","ProcessEvent"],"meaning":"Possibili pattern di oggetti e reflection Unreal; richiedono conferma di layout e versione.","source":"https://dev.epicgames.com/documentation/en-us/unreal-engine/objects-in-unreal-engine","confidence":"heuristic"},
+  {"id":"api:fmod","terms":["FMOD_System","FMOD::","FMOD_System_Update"],"meaning":"Indizi di gestione audio FMOD; mantenere handle e semantica delle chiamate espliciti.","source":"https://www.fmod.com/docs/2.03/api/core-api-system.html","confidence":"heuristic"}
+]
