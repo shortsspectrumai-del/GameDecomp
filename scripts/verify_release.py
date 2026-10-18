@@ -45,7 +45,7 @@ def verify(output):
         members = package.namelist()
         metadata_path = next(x for x in members if x.endswith('.dist-info/METADATA'))
         metadata = email.parser.Parser().parsestr(package.read(metadata_path).decode())
-        if metadata['Version'] != expected or 'License :: OSI Approved :: Apache Software License' not in metadata.get_all('Classifier', []):
+        if metadata['Version'] != expected or 'License :: Other/Proprietary License' not in metadata.get_all('Classifier', []):
             raise AssertionError('Version/license metadata mismatch')
         license_path = next(x for x in members if x.endswith('.dist-info/LICENSE') or x.endswith('.dist-info/licenses/LICENSE'))
         if package.read(license_path) != (ROOT/'LICENSE').read_bytes():

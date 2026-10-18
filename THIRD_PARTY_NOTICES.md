@@ -1,6 +1,6 @@
 # Third-Party Notices & External Components
 
-GameDecomp source code is distributed under the **Apache License 2.0** (see [`LICENSE`](LICENSE)). This license applies to the GameDecomp codebase and does not alter the licenses of external toolchains or user-analyzed binaries.
+GameDecomp source code is distributed under the **GameDecomp Personal and Non-Commercial Use License** (see [`LICENSE`](LICENSE)). This license applies to the GameDecomp codebase and does not alter the licenses of external toolchains or user-analyzed binaries.
 
 ## External Toolchains & Optional Dependencies
 

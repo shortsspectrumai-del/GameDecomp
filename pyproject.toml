@@ -38,7 +38,7 @@ classifiers = [
     "Intended Audience :: Developers",
     "Intended Audience :: Science/Research",
     "Intended Audience :: Information Technology",
-    "License :: OSI Approved :: Apache Software License",
+    "License :: Other/Proprietary License",
     "Operating System :: POSIX :: Linux",
     "Programming Language :: C",
     "Programming Language :: C++",
@@ -55,11 +55,11 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yusv46/GameDecomp"
-Repository = "https://github.com/yusv46/GameDecomp"
-Documentation = "https://github.com/yusv46/GameDecomp#readme"
-Issues = "https://github.com/yusv46/GameDecomp/issues"
-Changelog = "https://github.com/yusv46/GameDecomp/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/shortsspectrumai-del/GameDecomp"
+Repository = "https://github.com/shortsspectrumai-del/GameDecomp"
+Documentation = "https://github.com/shortsspectrumai-del/GameDecomp#readme"
+Issues = "https://github.com/shortsspectrumai-del/GameDecomp/issues"
+Changelog = "https://github.com/shortsspectrumai-del/GameDecomp/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 console = ["lz4>=4"]

@@ -39,7 +39,7 @@
 
 ## 0.3.0 — 2026-10-11
 
-- Introduced closed-loop LLM reconstruction from binary evidence, initial Ghidra SIMD compatibility lowering (`CONCAT*`, `SUB*`, `ZEXT*`, `SEXT*`, `PSHUFLW`, `PSHUFHW`, `PSADBW`, `MOVMSKPS`), CMake project export (`project` and `project-ai`), and Apache 2.0 licensing.
+- Introduced closed-loop LLM reconstruction from binary evidence, initial Ghidra SIMD compatibility lowering (`CONCAT*`, `SUB*`, `ZEXT*`, `SEXT*`, `PSHUFLW`, `PSHUFHW`, `PSADBW`, `MOVMSKPS`), and CMake project export (`project` and `project-ai`).
 
 ## 0.2.0 — 2026-10-11
 

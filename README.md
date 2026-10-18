@@ -1,12 +1,12 @@
 # GameDecomp — Evidence-Driven Binary Decompiler, SIMD/CFG Lifter & AI Reconstruction Studio
 
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![License: Personal & Non-Commercial](https://img.shields.io/badge/License-Personal_%26_Non--Commercial-ef4444.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-0.3.7-10b981.svg)](pyproject.toml)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-38bdf8.svg)](pyproject.toml)
 [![Tests](https://img.shields.io/badge/tests-492%20passed-86edcd.svg)](tests/)
 [![Differential Checks](https://img.shields.io/badge/differential%20oracle-93%2C790%2B%20cases%20(0%20divergences)-f59e0b.svg)](docs/REAL_GAME_BENCHMARK.md)
 
-**GameDecomp** is an open-source, evidence-driven binary decompilation, static analysis, and AI-assisted source reconstruction toolkit engineered for native executables (`ELF`, `PE`, `Mach-O`), **WebAssembly** (`.wasm`), **.NET assemblies** (`.dll` / `.exe`), and **JVM bytecode** (`.class` / `.jar`).
+**GameDecomp** is an evidence-driven binary decompilation, static analysis, and AI-assisted source reconstruction toolkit engineered for native executables (`ELF`, `PE`, `Mach-O`), **WebAssembly** (`.wasm`), **.NET assemblies** (`.dll` / `.exe`), and **JVM bytecode** (`.class` / `.jar`).
 
 Unlike opaque LLM wrappers that hallucinate unverified source code, GameDecomp anchors every recovery step in **verifiable binary evidence**:
 1. **Deterministic Static & IR Lifters:** Native x86-64 ELF lifter, headless **Ghidra** P-code integration, pure-Python **WebAssembly** stack-to-expression lifter, **ILSpy** (.NET), and **CFR** (JVM).
@@ -190,7 +190,7 @@ sudo apt update && sudo apt install -y python3 python3-pip python3-venv build-es
 GameDecomp's core engine, WebAssembly lifter, GraphSAGE GNN inference, LLM client, and Studio web UI require **zero mandatory third-party Python libraries**:
 
 ```bash
-git clone https://github.com/yusv46/GameDecomp.git
+git clone https://github.com/shortsspectrumai-del/GameDecomp.git
 cd GameDecomp
 
 # Create and activate a virtual environment (optional but recommended)
@@ -387,6 +387,8 @@ GameDecomp enforces a strict separation between **observed binary facts**, **com
 
 ---
 
-## License
+## License — Personal & Non-Commercial Use Only
 
-Licensed under the **Apache License 2.0**. See [`LICENSE`](LICENSE) and [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) for details.
+Copyright © 2026 GameDecomp Authors. All rights reserved.
+
+This project is licensed strictly for **Personal, Educational, and Non-Commercial Academic Research Use Only** under the **GameDecomp Personal and Non-Commercial Use License**. Commercial use, commercial redistribution, paid services, or SaaS/cloud hosting of this software or derivative works is strictly prohibited without prior written authorization from the copyright holder. See [`LICENSE`](LICENSE) and [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) for full terms.
